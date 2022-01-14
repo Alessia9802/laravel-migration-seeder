@@ -6,5 +6,6 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    //
+    
+    /* ddd(Travel::all()); */
 }
