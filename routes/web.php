@@ -13,4 +13,42 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PageController@index');
+Route::get('/', function(){
+    return view('welcome');
+});
+
+Route::get('Travels','PageController@index')->name('Travels');
+Route::get('Travels/{Travel}','PageController@show')->name('Travel');{}
+
+/*
+Pacchetti viaggi
+Model: Travel
+Migration: Travels
+- id
+- country
+- days
+- hotel
+Controller: PageController / TravelController
+Routes: 
+- Travels
+- Travels/1
+
+Agenzia viaggi - Blog
+Model: Blog
+Migration: Blogs
+- id
+- date
+- description
+- gallery
+- services
+- activities
+- bar
+- Restaurant
+- pool
+- beach
+Controller: BlogController
+Routes: 
+- Blogs
+- Blogs/1
+
+ */
