@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PageController extends index(){
+class PageController extends Controller
+{
     
-    ddd(Travel::all()); 
+   //
 }
