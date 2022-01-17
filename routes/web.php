@@ -26,7 +26,8 @@ Model: Travel
 Migration: Travels
 - id
 - country
-- days
+- data di partenza
+- data di ritorno
 - hotel
 Controller: PageController / TravelController
 Routes: 
