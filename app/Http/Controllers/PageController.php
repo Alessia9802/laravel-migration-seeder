@@ -11,6 +11,6 @@ class PageController extends Controller
 
    public function index()
    {
-        return view('Travels.index');
+        return view('travels.index');
    }
 }

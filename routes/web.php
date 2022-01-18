@@ -17,8 +17,8 @@ Route::get('/', function(){
     return view('welcome');
 });
 
-Route::get('Travels','PageController@index')->name('Travels');
-Route::get('Travels/{Travel}','PageController@show')->name('Travel');{}
+Route::get('travels','PageController@index')->name('travels');
+Route::get('travels/{travel}','PageController@show')->name('travel');
 
 /*
 Pacchetti viaggi
